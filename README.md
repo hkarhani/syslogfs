@@ -20,6 +20,7 @@ There are couple of Settings that need to be configured before running the Scrip
 			- Type (String) - Inv 
 			- Content (String) - Inv 
 			- Message (String) 
+		iii. You can configure Aggregate Settings to keep history of Updates received. 
 ```
 
 Note: For DEX-Web-Services Account make sure to note both Account name / username as they need to be entered as: name@username in the following section. 
@@ -58,3 +59,16 @@ propertyName = "TrapsEvents" # Property name to be used in FS Web-Service DEX Co
 
  sudo python syslogfs.py 
 ```
+
+Now you can configure ESM Server to send Syslogs to Host IP and UDP port configured (default 514). 
+
+## 5. Testing syslogfs server
+
+You can find a tiny syslog client under client directory - you can customize test_client.py with IPs of Syslog server and IPs to be tested within counterACT via Simulated Syslog messages. 
+
+```
+python test_client.py 
+```
+
+Now you can visit either endpoints properties or Inventory in CounterACT to verify that you have received the TrapsEvents Property. 
+
