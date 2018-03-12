@@ -72,3 +72,8 @@ python test_client.py
 
 Now you can visit either endpoints properties or Inventory in CounterACT to verify that you have received the TrapsEvents Property. 
 
+
+## Credits 
+
+Based on original idea from Mohammad Zhaim - ForeScout SE. Developed and maintained by Hassan El Karhani - a ForeScout SE.
+ 
