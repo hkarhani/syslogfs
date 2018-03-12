@@ -75,5 +75,5 @@ Now you can visit either endpoints properties or Inventory in CounterACT to veri
 
 ## Credits 
 
-Based on original idea from Mohammad Zhaim - ForeScout SE. Developed and maintained by Hassan El Karhani - a ForeScout SE.
- 
+Based on original idea of Mohammad Zhaim - ForeScout SE. 
+Developed and maintained by Hassan El Karhani - a ForeScout SE.
