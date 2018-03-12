@@ -83,7 +83,7 @@ docker build . -t hkarhani/syslogfs
 Then you can run the built container using the following command:
 
 ```
-docker run -it -p 514:514 hkarhani/syslogfs
+docker run -it -p 514:514/udp hkarhani/syslogfs
 ``` 
 
 You might need to verify the mapped ports in case any changes from default UDP port 514 is being configured either within the Script or while being exposed on the Docker host. 
