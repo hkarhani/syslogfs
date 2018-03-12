@@ -88,6 +88,12 @@ docker run -it -p 514:514/udp hkarhani/syslogfs
 
 You might need to verify the mapped ports in case any changes from default UDP port 514 is being configured either within the Script or while being exposed on the Docker host. 
 
+If port is used on the docker host you can change mapping to different ports such as 5514 instead, while running in background, and removing docker host once terminated: 
+
+```
+docker run -d --rm -p 5514:514/udp hkarhani/syslogfs
+``` 
+
 ## Credits 
 
 Based on original idea of Mohammad Zhaim - ForeScout SE. 
