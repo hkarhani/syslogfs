@@ -72,6 +72,21 @@ python test_client.py
 
 Now you can visit either endpoints properties or Inventory in CounterACT to verify that you have received the TrapsEvents Property. 
 
+## 6. Building & Running your Docker Container 
+
+You can build your own version of Docker Container using the following command (executed within same folder of the scrips / Dockerfile):
+
+```
+docker build . -t hkarhani/syslogfs 
+```
+
+Then you can run the built container using the following command:
+
+```
+docker run -it -p 514:514 hkarhani/syslogfs
+``` 
+
+You might need to veriy the mapped ports in case any changes from default UDP port 514 is being configured either within the Script or while being exposed on the Docker host. 
 
 ## Credits 
 
