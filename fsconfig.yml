@@ -1,8 +1,8 @@
 ---
-counterActIP: 
+counterActIP: <your-ip-address>
 Web-API: 
-    User:  
-    Password:  
+    User:  <your-web-api-username>
+    Password:  <your-web-api-password>
 DEX-Web-Serivces: 
-    User: 
-    Password:  
+    User:  <your-dex-username>
+    Password:  <your-dex-password>
