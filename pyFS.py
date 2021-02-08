@@ -11,12 +11,12 @@ import shutil
 from requests.auth import HTTPBasicAuth
 
 class pyFS(object):
-    """ForeScout WebAPI wrapper Class:
+    """WebAPI wrapper Class:
 
     Attributes:
-        user: UserName used to access ForeScout webAPIs.
-        password: Password used to access ForeScout webAPIs.
-        host: ForeScout CounterACT Appliance IP (such as 10.0.2.100) 
+        user: UserName used to access your webAPIs.
+        password: Password used to access your webAPIs.
+        host: Your Appliance IP address. 
 
     """
 
