@@ -2,15 +2,15 @@
 
 This is lightweight Tiny UDP Syslog Server which can be configured:
   1. To receive UDP Syslogs from PAN Traps ESM Server - currently configured for Treats - Threat Prevention Messages. 
-  2. Send DEX Updates to ForeScout CounterACT   
+  2. Send DEX Updates to your platform.   
 
 There are couple of Settings that need to be configured before running the Script: 
 
-## 1. Configure Data Exchange DEX Extended Module on CounterACT:
+## 1. Configure Data Exchange DEX Extended Module on your platform:
 
 ```
      a. To Accept requests from Host IP running the Script
-     b. Configure a new DEX Account (note Name@Username to be used in below configuration)
+     b. Configure a new DEX Account (note <Name>@<Username> to be used in below configuration)
      b. To Define a Web-Services Composite Property (default name is "TrapsEvents"). 
         i. You need to create a Web-Service Property in your ForeScout CounterACT / Data-Exchange DEX / Web-Services Properties 
            Property Name: default "TrapsEvents" - Type Composite (configurable from syslogfs.py)
@@ -31,13 +31,13 @@ Fill in the IP, User/Pass for Web-APIs and User/Pass for DEX-Web-Services Accoun
 
 ```
 ---
-counterActIP:  
+counterActIP:  <your-ip>
 Web-API: 
-    User: 
-    Password:  
+    User: <your-username>
+    Password:  <your-password>
 DEX-Web-Serivces: 
-    User: 
-    Password:  
+    User: <name>@<username> # for DEX
+    Password:  <your-password>
 ```
 ## 3. Edit any customized settings in the user data header of "syslogfs.py":
 
@@ -94,7 +94,3 @@ If port is used on the docker host you can change mapping to different ports suc
 docker run -d --rm -p 5514:514/udp hkarhani/syslogfs
 ``` 
 
-## Credits 
-
-Based on original idea of Mohammad Zhaim - ForeScout SE. 
-Developed and maintained by Hassan El Karhani - a ForeScout SE.
