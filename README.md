@@ -12,7 +12,7 @@ There are couple of Settings that need to be configured before running the Scrip
      a. To Accept requests from Host IP running the Script
      b. Configure a new DEX Account (note <Name>@<Username> to be used in below configuration)
      b. To Define a Web-Services Composite Property (default name is "TrapsEvents"). 
-        i. You need to create a Web-Service Property in your ForeScout CounterACT / Data-Exchange DEX / Web-Services Properties 
+        i. You need to create a Web-Service Property in your Platform / Data-Exchange DEX / Web-Services Properties 
            Property Name: default "TrapsEvents" - Type Composite (configurable from syslogfs.py)
         ii. Then Configure the following mapped sub-properties: 
 			- TimeStamp (String) - Inv 
